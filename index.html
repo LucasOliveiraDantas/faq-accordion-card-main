@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--title-->
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <!--remix icon-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq">
+      <div class="faq-img">
+        <img
+          class="img-illustration"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="illustration woman"
+        />
+        <img
+          class="img-bg-shadow"
+          src="images/bg-pattern-mobile.svg"
+          alt="image shadow "
+        />
+      </div>
+      <div class="faq-img-desktop">
+        <img
+          class="img-illustration"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="illustration woman"
+        />
+        <img
+          class="img-bg-shadow"
+          src="images/bg-pattern-desktop.svg"
+          alt="image shadow "
+        />
+        <img
+          class="img-box"
+          src="images/illustration-box-desktop.svg"
+          alt="icon
+        box"
+        />
+      </div>
+
+      <div class="faq-section">
+        <h1 class="title">FAQ</h1>
+        <div class="faq-container">
+          <button
+            class="faq-question faq1"
+            aria-expanded="false"
+            aria-controls="faq1-desc"
+          >
+            How many team members can I invite?
+            <img
+              class="img-arrow"
+              src="images/icon-arrow-down.svg"
+              alt="icon arrow"
+            />
+          </button>
+          <div id="faq1-desc" class="desc faq1-desc">
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <button
+            class="faq-question faq2"
+            aria-expanded="false"
+            aria-controls="faq1-desc"
+          >
+            What is the maximum file upload size?
+            <img
+              class="img-arrow"
+              src="images/icon-arrow-down.svg"
+              alt="icon arrow"
+            />
+          </button>
+          <div id="faq2-desc" class="desc faq2-desc">
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <button
+            class="faq-question faq3"
+            aria-expanded="false"
+            aria-controls="faq1-desc"
+          >
+            How do I reset my password?
+            <img
+              class="img-arrow"
+              src="images/icon-arrow-down.svg"
+              alt="icon arrow"
+            />
+          </button>
+          <div id="faq3-desc" class="desc faq3-desc">
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <button
+            class="faq-question faq4"
+            aria-expanded="false"
+            aria-controls="faq1-desc"
+          >
+            Can I cancel my subscription?
+            <img
+              class="img-arrow"
+              src="images/icon-arrow-down.svg"
+              alt="icon arrow"
+            />
+          </button>
+          <div id="faq4-desc" class="desc faq4-desc">
+            <p>
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <button
+            class="faq-question faq5"
+            aria-expanded="false"
+            aria-controls="faq1-desc"
+          >
+            Do you provide additional support?
+            <img
+              class="img-arrow"
+              src="images/icon-arrow-down.svg"
+              alt="icon arrow"
+            />
+          </button>
+          <div id="faq5-desc" class="desc faq5-desc">
+            <p>
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

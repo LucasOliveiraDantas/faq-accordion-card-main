@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+:root {
+  /* ## Colors */
+
+  /* ### Primary ### */
+
+  /* #### Text #### */
+
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+
+  /*#### Gradient ####*/
+
+  /* ###Background gradient### */
+
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+
+  /* ### Neutral ### */
+
+  /* #### Text #### */
+
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* #### Dividers #### */
+
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+body {
+  background-image: linear-gradient(
+    to top,
+    hsl(240, 73%, 65%),
+    hsl(273, 75%, 66%)
+  );
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 8rem 1rem 5.1rem 1rem;
+    border-radius: 1rem;
+  }
+  .title {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .faq-img-desktop {
+    display: none;
+  }
+  .img-illustration {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-top: -7rem;
+    margin-left: -7.8rem;
+  }
+  .img-bg-shadow {
+    position: absolute;
+    width: 240px;
+    height: auto;
+    margin-left: -7.5rem;
+  }
+  .faq-container {
+    margin: 1rem 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .faq-question {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    color: var(--Dark-grayish-blue);
+  }
+
+  .faq1-desc,
+  .faq2-desc,
+  .faq3-desc,
+  .faq4-desc,
+  .faq5-desc {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0rem;
+    margin-top: 0.5rem;
+  }
+  .faq1.active,
+  .faq2.active,
+  .faq3.active,
+  .faq4.active,
+  .faq5.active {
+    font-weight: bold;
+    color: #000;
+  }
+  .faq1.active .img-arrow,
+  .faq2.active .img-arrow,
+  .faq3.active .img-arrow,
+  .faq4.active .img-arrow,
+  .faq5.active .img-arrow {
+    transform: rotate(180deg);
+  }
+  .faq1-desc.show,
+  .faq2-desc.show,
+  .faq3-desc.show,
+  .faq4-desc.show,
+  .faq5-desc.show {
+    visibility: visible;
+    overflow: visible;
+    height: 4rem;
+  }
+  .desc p {
+    font-size: 14px;
+    margin-top: 1rem;
+    color: var(--Dark-grayish-blue);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq {
+    display: flex;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 8rem 20rem 10.7rem 20rem;
+  }
+  .faq-img {
+    display: none;
+  }
+  .faq-img-desktop {
+    overflow: hidden;
+    padding-right: 10rem;
+  }
+
+  .img-illustration {
+    position: static;
+    width: 400px;
+    height: auto;
+    margin-top: 5rem;
+    margin-left: -4.5rem;
+  }
+  .img-bg-shadow {
+    position: static;
+    width: 380px;
+    height: auto;
+    margin-left: -3rem;
+    margin-top: -20rem;
+  }
+  .img-box {
+    position: absolute;
+    width: 150px;
+    margin-top: -15rem;
+    margin-left: -4.5rem;
+  }
+  .title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 1.8rem;
+  }
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-container {
+    margin: 0.8rem 5rem 0.8rem 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .faq-question {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    color: var(--Dark-grayish-blue);
+  }
+
+  .faq1-desc,
+  .faq2-desc,
+  .faq3-desc,
+  .faq4-desc,
+  .faq5-desc {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0rem;
+    margin-top: 0.5rem;
+  }
+  .faq1.active,
+  .faq2.active,
+  .faq3.active,
+  .faq4.active,
+  .faq5.active {
+    font-weight: bold;
+    color: #000;
+  }
+  .faq1.active .img-arrow,
+  .faq2.active .img-arrow,
+  .faq3.active .img-arrow,
+  .faq4.active .img-arrow,
+  .faq5.active .img-arrow {
+    transform: rotate(180deg);
+  }
+  .faq1-desc.show,
+  .faq2-desc.show,
+  .faq3-desc.show,
+  .faq4-desc.show,
+  .faq5-desc.show {
+    visibility: visible;
+    overflow: visible;
+    height: 4rem;
+  }
+  .desc p {
+    font-size: 14px;
+    margin-top: 1rem;
+    color: var(--Dark-grayish-blue);
+  }
+}
